@@ -22,6 +22,8 @@ class CreateStatusesTable extends Migration
 
         DB::table('statuses')->insert(
             ['name' => 'Pending'],
+            ['name' => 'Active'],
+            ['name' => 'Payment'],
         );
     }
 

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\API\ServiceController;
 use App\Http\Controllers\API\BookingController;
+use App\Http\Controllers\API\HomeController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -25,3 +26,4 @@ Route::get('/services', [ServiceController::class, 'index']);
 Route::apiResource('Bookings', BookingController::class);
 Route::get('/bookings/status/{service}/{status}', [BookingController::class, 'status']);
 Route::post('/status/{id}', [BookingController::class, 'updateStatus']);
+Route::get('/dbseed', [HomeController::class, 'dbSeed']);
