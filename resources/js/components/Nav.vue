@@ -14,7 +14,7 @@
                     <router-link to="/bookings/Active" class="nav-item nav-link"
                         >Services</router-link
                     >
-                    <router-link to="/bookings/payment" class="nav-item nav-link"
+                    <router-link to="/bookings/Payment" class="nav-item nav-link"
                         >Payments</router-link
                     >
 

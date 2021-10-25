@@ -41,7 +41,7 @@ export default {
                 return this.$route.params.status
             },
             currentService(){
-                return this.services[0]?.id
+                return this.services[0]?.id ?? 1
             }
         },
         methods: {
